@@ -30,7 +30,7 @@ echo "${COLOR_BLUE}${COLOR_BOLD}Parrot Removal Tool by Sudofox${COLOR_RESET}"
 [ -z "$1" ] && usage
 
 if ! command -v nbted > /dev/null; then echo $ERROR_HEADER'Could not find nbted (cargo install nbted)'; exit 1; fi
-if ! command -v jq > /dev/null; then echo $ERROR_HEADER'Could not find jq (for json parsing), please install it first)'; exit 1; fi
+if ! command -v jq > /dev/null; then echo $ERROR_HEADER'Could not find jq (for json parsing), please install it first'; exit 1; fi
 
 # Fetch UUID by username
 
