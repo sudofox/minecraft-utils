@@ -10,13 +10,13 @@ Must be run from root of Minecraft server folder.
 Usage: `./remove-parrots.sh MinecraftUsername`
 
 
-#### item-search.sh
+#### inventory-search.sh
 Tool for scanning all playerdata files for items within the inventory or Ender Chest.
 
-Must be run from root of Minecraft server folder. Can be used with some regex.
+Invoke it when your current working directory is the root of the Minecraft server folder. Can be used with some regex.
 
-Usage: `./item-search.sh cobblestone`
-`./item-search.sh '[a-z]{1,}_shulker_box'`
+Usage: `./inventory-search.sh cobblestone`
+`./inventory-search.sh '[a-z]{1,}_shulker_box'`
 
 
 #### region-parser.sh
