@@ -17,3 +17,12 @@ Must be run from root of Minecraft server folder. Can be used with some regex.
 
 Usage: `./item-search.sh cobblestone`
 `./item-search.sh '[a-z]{1,}_shulker_box'`
+
+
+#### region-parser.sh
+
+Tool that parses a Minecraft region file (.mca) and extracts each chunk to an NBT file.
+
+I plan on making this into some sort of region/chunk search tool to find things like lost tools and items.
+
+Usage: `./region-parser.sh regionfile.mca`
