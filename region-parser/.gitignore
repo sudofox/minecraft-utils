@@ -2,3 +2,4 @@ out/*
 mca2nbt
 MineOps
 timestamp-debug.sh
+*_nbt
