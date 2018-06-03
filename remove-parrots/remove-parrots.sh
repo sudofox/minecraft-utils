@@ -61,8 +61,8 @@ for world in $(ls|grep world); do
 
 		CHECK_PARROTS=$(cat $world/playerdata/$FORMATTED_UUID.dat|gzip -dc|strings|egrep "ShoulderEntity(Left|Right)")
 		if [[ $(echo -n "$CHECK_PARROTS"|wc -w) -eq 0 ]]; then
-			echo ${INFO_HEADER}Found no parrots, exiting.
-			exit 0;
+			echo ${INFO_HEADER}Found no parrots.
+			continue;
 		else
 			echo ${INFO_HEADER}Found $(echo -n "$CHECK_PARROTS"|wc -w) parrot\(s\).
 		fi
@@ -87,7 +87,7 @@ for world in $(ls|grep world); do
 		nbted -r <(echo -n "$REMOVE_PARROT") > $world/playerdata/$FORMATTED_UUID.dat # this overwrites the playerdata file
 		echo ${INFO_HEADER}Removed parrots from $1.
 		echo ${INFO_HEADER}You may remove $world/playerdata/$FORMATTED_UUID.dat.$backup_date.backup when ready.
-		exit 0
+		continue;
 	fi
 done
 
