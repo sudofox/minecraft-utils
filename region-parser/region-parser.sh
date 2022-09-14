@@ -23,20 +23,16 @@ echo "+=============================+"
 DEBUG=false
 
 log_debug() {
-
 	if $DEBUG; then
 		tput dim
 		echo "$@"
 		tput sgr0
 	fi
-
 }
 
 usage() {
-
 	echo "Usage: $0 <region file>.mca"
 	exit 1
-
 }
 
 # Validation
