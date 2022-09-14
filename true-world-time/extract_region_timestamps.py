@@ -1,5 +1,8 @@
-# extract and print the chunk timestamps from a minecraft region file
-# by sudofox
+#
+# @author sudofox
+#
+# Extract and print the chunk timestamps from a minecraft region file
+#
 
 import sys
 
