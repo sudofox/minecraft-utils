@@ -36,7 +36,7 @@ for d in "$SRC_DIR"/*/ ; do
 done
 
 # loop through the .mcworld files in the mcworld_import directory
-for f in /sdcard/mcworld_import/*.mcworld; do
+for f in $(adb shell "ls /sdcard/mcworld_import/*.mcworld"); do
   # open the .mcworld file in Minecraft
   adb shell am start -a android.intent.action.VIEW -d "file://$f" -t application/vnd.minecraft-world
 
